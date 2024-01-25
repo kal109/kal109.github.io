@@ -1,2 +1,53 @@
 /* Hei näin kommentoit css:sää */
 /* Laita tänne omat tyylittelyt :D */
+
+body {
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.laatikko {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  rotate: 45deg;
+}
+
+.pallo {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  border-radius: 50%;
+}
+
+.kolmio {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* magic 🪄 */
+  border-width: 0 66px 100px 66px;
+  border-color: transparent transparent #00ff00 transparent;
+}
+
+#blackbox {
+  background-color: black;
+}
