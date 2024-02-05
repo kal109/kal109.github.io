@@ -1,19 +1,123 @@
 /* Hei näin kommentoit css:sää */
 /* Laita tänne omat tyylittelyt :D */
 
+@font-face {
+  font-family: "ArialRounded";
+  src: url('../fonts/ttf/Arial-RoundedBold.TTF');
+}
+
+h1 {
+  font-family: "ArialRounded"
+}
+
+p {
+  font-family: "ArialRounded"
+}
+
+@media (max-width: 768px) {
+  #sidenav {
+    display: none;
+  }
+}
+
 body {
-  background-color: #f3f3f3;
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #333;
-  margin: 0;
+  background-color: #ECEEEB;
+  background-image: url("../images/dots7.png");
+  background-size: cover;
+  font-family: "ArialRounded";
+  color: #414E5B;
+  margin: 190px;
   padding: 0;
 }
 
-.container {
+figure {
+  text-align: center;
+  display: table;
+  margin: 10px auto;
+  min-width: 70px;
+  max-width: 150px;
+}
+
+.header {
+  padding: 0;
+  float: right;
+}
+
+.sidenav {
+  height: 100%;
+  max-width: 20%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 45px;
+  outline: solid;
+  outline-width: 6px;
+  outline-color: #37C6F4;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgba(196, 199, 195, 0.36), rgba(146, 148, 145, 0.36));
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: #414E5B;
+  display: block;
+
+  img {
+    border-radius: 22%;
+    box-shadow: 0px 3px 8px #666;
+  }
+}
+
+.sidenav a:hover {
+  color: #798999;
+}
+
+.footer {
+  height: 250px;
+  width: 100%;
+  position: bottom;
+  background-color: #C4C7C3;
+}
+
+.contents {
+  font-size: 25px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.button {
+  background-image: linear-gradient(to top, #B7B7B7 0%, #ECEEEB 85%, #B5ECFE 100%);
+  outline: solid;
+  outline-color: #B7B7B7;
+  outline-width: 3px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 5px #b9b9b9;
+  color: #414E5B;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.button:active {
+  box-shadow: 0px 3px 8px #666;
+  transform: translateY(4px);
+}
+
+.button:hover {
+  outline-color: #b9b9b9;
+  background-image: linear-gradient(to top, #b9b9b9 0%, #B7B7B7 20%, #ECEEEB 90%, #B5ECFE 95%, #37C6E4 100%);
 }
 
 img {
@@ -25,28 +129,7 @@ h1 {
   text-align: center;
 }
 
-.laatikko {
-  width: 100px;
-  height: 100px;
-  background-color: #ff0000;
-  rotate: 45deg;
-}
 
-.pallo {
-  width: 100px;
-  height: 100px;
-  background-color: #0000ff;
-  border-radius: 50%;
-}
-
-.kolmio {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  /* magic 🪄 */
-  border-width: 0 66px 100px 66px;
-  border-color: transparent transparent #00ff00 transparent;
-}
 
 #blackbox {
   background-color: black;
