@@ -7,9 +7,12 @@
   <!-- width=device-width pakottaa sisällön skaalautumaan mobiililla "oikein" -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- sivuston title. vaihda kuvaavammaksi -->
-  <title>Karla L. Design & Game Studio</title>
+  <title>Karla L.</title>
   <!-- kutsutaan tyylitiedostoa tässä -->
   <link rel="stylesheet" href="/styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
@@ -20,33 +23,90 @@
 
 <body>
   <header>
-    <a href="#" class="button">Yhteystiedot</a>
-    <h1>Karla L. Design and Games Studio</h1>
+    <a href="#yhteystiedot" class="button">Yhteystiedot</a>
+    <h1>Karla L.</h1>
   </header>
 
-  <section>
-    <article>
-      <p>test test</p>
-    </article>
+  <div class="mobilemenu">
+    <img src="../images/menubutton.png" alt="Menu-ikoni">
+  </div>
 
-    <p> Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-      Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
-      efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-      Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
-      efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-      Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
-      efficiantur his ad. Eum no molestiae voluptatibus</p>
-  </section>
+  <div class="contentgrid">
+    <a href="#infolla">
+      <figure>
+        <img src="../images/infolla.jpg" alt="Athenen logo oranssilla pohjalla" width=100% height=100%>
+        <figcaption>
+          <h3>Blogi: Miksi infolla?</h3>
+          <p>Mikä minusta tulee isona? Kysymys on ollut vaikea...</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="#aikajana">
+      <figure>
+        <img src="../images/aikajana.jpg" alt="Muistilappuja korkkitaululla" width=100% height=100%>
+        <figcaption>
+          <h3>Elämäni aikajana</h3>
+          <p>Mitä olen oppinut menneistä töistä ja harrastuksista?</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="#2023">
+      <figure>
+        <img src="../images/2023.jpg" alt="2023" width=100% height=100%>
+        <figcaption>
+          <h3>2023 kooste</h3>
+          <p>Vuoden 2023 projektit ja saavutukset aikajärjestyksessä.</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="#openmw">
+      <figure>
+        <img src="../images/openmw.jpg" alt="Ikoni, joka kuvastaa tiedostoa" width=100% height=100%>
+        <figcaption>
+          <h3>Projekti - OpenMW UI</h3>
+          <p>Käyttäjärajapinnan muokkausta. OpenMW:n tukema moderni UI...</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="#captcha">
+      <figure>
+        <img src="../images/robotti.jpg" alt="Robotti vihreällä taustalla" width=100% height=100%>
+        <figcaption>
+          <h3>Olenko robotti? -peli</h3>
+          <p>CAPTCHA hämmentää itse kutakin. Pelaa interaktiivista peliä...</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="#turtleos">
+      <figure>
+        <img src="../images/turtleos.jpg" alt="Uiva kilpikonna" width=100% height=100%>
+        <figcaption>
+          <h3>Projekti - turtleOS</h3>
+          <p>Käyttäjärajapinnan suunnittelu tähän moderniin ja nopeaan...</p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+
 
   <footer>
-    <p> yhteystietoja blah blah </p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-      Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
-      efficiantur his ad. Eum no molestiae voluptatibus</p>
-
+    <a href="#viesti" class="button viesti">Laita viesti!</a>
+    <img src="../images/minä.jpg" alt="Kuva Karlasta" width=150rem height=150rem>
+    <p>Karla L.<br>
+      karla.l@feikkiosoite.com<br>
+      112<br>
+      <br>
+      Instagram: @karlanfeikkiaccount<br>
+      X: @karla_eioox<br>
+      Linkedin: linkedin.com/in/karlalund
+    </p>
+    <div class="alhaalle">
+      <p> Privacy Policy </p>
+      <p>Terms of Service</p>
+      <p>©Karla L. 2024</p>
+    </div>
   </footer>
+
 
   <div class="sidenav">
     <a href="#projektit">
@@ -80,6 +140,7 @@
       </figure>
     </a>
   </div>
+
 </body>
 
 </html>
