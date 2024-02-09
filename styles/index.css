@@ -34,17 +34,8 @@ body {
   padding: 0;
 }
 
-figure {
-  text-align: center;
-  display: table;
-  margin: 10px auto;
-  min-width: 70px;
-  max-width: 300px;
-}
-
 header {
-  width: 81%;
-  left: 0;
+  width: 80%;
   justify-content: space-around;
 
   h1 {
@@ -54,49 +45,62 @@ header {
 }
 
 .contentgrid {
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: center;
 
-
-  figure {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    transition: transform .3s;
+  a {
+    text-align: center;
+    display: table;
+    margin: 2rem auto;
+    width: 30%;
+    text-align: left;
+    transition: transform .25s;
   }
 
-  figure:hover {
+  a:hover {
     transform: scale(1.1);
   }
 
   img {
+    display: table;
+    max-width: 100%;
     outline-style: solid;
     outline-width: 3px;
     outline-color: #A5AEBA;
     border-radius: 7%;
     box-shadow: 0px 3px 5px #999;
+    margin: 0 auto;
+
   }
 
-  figcaption {
-    h3 {
-      margin: 0.5rem;
-      text-align: left;
-      font-size: 1.25rem;
-    }
-
-    p {
-      margin: 0 auto;
-      text-align: left;
-      font-family: "MapleMono";
-      font-size: 0.75rem;
-    }
-
+  h3 {
+    display: table-caption;
+    caption-side: bottom;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1.25rem;
     text-emphasis: none;
     text-decoration: none;
     color: #414E5B;
-    margin-bottom: 1rem;
   }
+
+  p {
+    display: table-caption;
+    caption-side: bottom;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "MapleMono";
+    font-size: 0.75rem;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #414E5B;
+    margin-bottom: 2rem;
+  }
+
 }
 
 .sidenav {
@@ -162,14 +166,6 @@ header {
   transform: scale(1.2);
 }
 
-/* .contents {
-  font-size: 25px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 @keyframes clickMe {
   0% {
     transform: scale(1);
@@ -219,11 +215,12 @@ header {
 }
 
 footer {
+  bottom: 0;
+  left: 0;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  height: 250px;
   width: 80%;
   max-width: 1150px;
   margin: 0 auto;
@@ -234,13 +231,14 @@ footer {
   outline-width: 6px;
   outline-color: #37C6F4;
   z-index: 15;
-  bottom: 0;
   background-image: linear-gradient(to top, rgba(146, 148, 145, 0.66), rgba(196, 199, 195, 0.66));
   margin-top: 8rem;
+  margin-left: 0;
+  margin-right: 0;
 
   img {
     position: relative;
-    z-index: 20;
+    z-index: 21;
     border-radius: 50%;
   }
 
@@ -253,27 +251,35 @@ footer {
     z-index: 30;
   }
 
-}
+  .alas {
+    z-index: 20;
 
-.alas {
-  p {
+    p {
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+
+    flex-wrap: nowrap;
     padding: 0 auto;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
   }
 
-  flex-wrap: nowrap;
-  padding: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
 }
+
+
 
 @media (max-width: 800px) {
   body {
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .button {
+    scale: 0.75;
   }
 
   .sidenav {
@@ -281,33 +287,78 @@ footer {
   }
 
   .contentgrid {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 
-    figure {
-      max-width: 100px;
+    a {
+      text-align: center;
+      display: table;
+      margin: 0.5rem auto;
+      width: 45%;
+      text-align: left;
+      flex-wrap: wrap;
+      transition: transform .25s;
     }
 
+    img {
+      display: table;
+      max-width: 100%;
+      outline-style: solid;
+      outline-width: 3px;
+      outline-color: #A5AEBA;
+      border-radius: 7%;
+      box-shadow: 0px 3px 5px #999;
+      margin: 0 auto;
+
+    }
+
+    h3 {
+      display: table-caption;
+      caption-side: bottom;
+      margin: 0 auto;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+      text-align: left;
+      font-size: 0.85rem;
+      text-emphasis: none;
+      text-decoration: none;
+      color: #414E5B;
+    }
+
+    p {
+      display: table-caption;
+      caption-side: bottom;
+      margin: 0 auto;
+      text-align: left;
+      font-family: "MapleMono";
+      font-size: 0.6rem;
+      text-emphasis: none;
+      text-decoration: none;
+      color: #414E5B;
+      margin-bottom: 0.5rem;
+    }
   }
 
   .mobilemenu {
+    align-content: space-around;
+
     display: inline;
   }
+
+  footer {
+    width: 100%;
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .button {
+      scale: 0.75;
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
-
-
-/*
-img {
-  max-width: 300px;
-}
-
-h1 {
-  font-size: 2em;
-  text-align: center;
-}
-
-
-
-#blackbox {
-  background-color: black;
-} */
