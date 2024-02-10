@@ -150,9 +150,9 @@ header {
 
 .mobilemenu {
   position: fixed;
-  left: 60%;
-  top: 70%;
-  z-index: 20;
+  right: 10%;
+  bottom: 8%;
+  z-index: 40;
   display: none;
 
   img {
@@ -223,6 +223,7 @@ footer {
   justify-content: start;
   width: 80%;
   max-width: 1150px;
+  min-height: 15rem;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -236,31 +237,45 @@ footer {
   margin-left: 0;
   margin-right: 0;
 
+
   img {
-    position: relative;
+    position: absolute;
+    right: 11%;
+    top: 10%;
     z-index: 21;
     border-radius: 50%;
   }
 
   .yhteystiedotFooter {
-    align-self: flex-end;
+    font-size: 1rem;
+    padding: 0.5rem auto;
+    position: absolute;
+    top: 0.5rem;
+    left: 3rem;
+    align-self: flex-start;
   }
 
   .viesti {
-    position: relative;
+    right: 21%;
+    top: 60%;
+    position: absolute;
     z-index: 30;
   }
 
   .alas {
     z-index: 20;
+    position: absolute;
+    bottom: 0.5rem;
 
     p {
+      font-size: 0.7rem;
       padding: 0 auto;
       margin: 0 auto;
     }
 
     flex-wrap: nowrap;
     padding: 0 auto;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -269,9 +284,21 @@ footer {
 
 }
 
+.marginaaliboksi {
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 73%; 
+  top: 0;
+  width: 40%;
+  background-image: linear-gradient(to left, rgba(196, 199, 195, 0.36), rgba(146, 148, 145, 0.25));
+  outline: solid;
+  outline-width: 6px;
+  outline-color: #37C6F4;
+}
 
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   body {
     margin-right: 5%;
     margin-left: 5%;
@@ -341,24 +368,71 @@ footer {
   }
 
   .mobilemenu {
-    align-content: space-around;
-
     display: inline;
   }
 
   footer {
     width: 100%;
+    min-height: none;
+    text-align: left;
 
     p {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
     }
 
-    .button {
-      scale: 0.75;
+    .yhteystiedotFooter {
+      position: absolute;
+      left: 10%;
+      top: 30%;
+    }
+
+    .button {\
+      width: 70%
+      position: absolute;
+      top: 5%;
+      left: 15%;
+      scale: 0.9;
     }
 
     img {
       display: none;
     }
   }
+}
+
+@media (min-width: 760px) and (max-width: 800px) {
+  body {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .mobilemenu {
+    right: 7%;
+    scale: 150%;
+    display: inline;
+  }
+
+  footer {
+
+    p {
+      font-size: 0.8rem;
+    }
+    
+    .yhteystiedotFooter {
+      position: absolute;
+      top: 15%;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .marginaaliboksi{
+    display: inline;
+  }
+
 }
