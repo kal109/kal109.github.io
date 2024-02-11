@@ -103,6 +103,37 @@ header {
 
 }
 
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  left: 5%;
+
+  img {
+    display: flex;
+    align-self: center;
+    margin: 3rem auto;
+    outline-style: solid;
+    outline-width: 6px;
+    outline-color: #A5AEBA;
+    border-radius: 7%;
+    box-shadow: 0px 3px 8px #999;
+  }
+
+  p {
+    line-height: 160%;
+    color: #414E5B;
+    font-family: 'Karla';
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
+
 .sidenav {
   height: 100%;
   max-width: 19%;
@@ -178,6 +209,63 @@ header {
   100% {
     transform: scale(1);
   }
+}
+
+#mobilenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 45px;
+  outline: solid;
+  outline-width: 6px;
+  outline-color: #37C6F4;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  background-color: #CFD1CE;
+  background-image: url("../images/dots9.png");
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+  display: none;
+}
+
+#mobilenav a {
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-around;
+  align-content: space-around;
+
+  figcaption {
+    padding: 1rem auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #414E5B;
+  }
+
+  img {
+    position: relative;
+    left: 35%;
+    width: 30%;
+    border-radius: 22%;
+    box-shadow: 0px 3px 5px #666;
+  }
+
+}
+
+#mobilenav .closebtn {
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  right: 25px;
+  color: #414E5B;
+  font-size: 40px;
 }
 
 .button {
@@ -288,7 +376,7 @@ footer {
   height: 100%;
   display: none;
   position: fixed;
-  left: 73%; 
+  left: 73%;
   top: 0;
   width: 40%;
   background-image: linear-gradient(to left, rgba(196, 199, 195, 0.36), rgba(146, 148, 145, 0.25));
@@ -386,9 +474,8 @@ footer {
       top: 30%;
     }
 
-    .button {\
-      width: 70%
-      position: absolute;
+    .button {
+      width: 70% position: absolute;
       top: 5%;
       left: 15%;
       scale: 0.9;
@@ -417,12 +504,16 @@ footer {
     display: inline;
   }
 
+  #mobilenav {
+    width: 20%;
+  }
+
   footer {
 
     p {
       font-size: 0.8rem;
     }
-    
+
     .yhteystiedotFooter {
       position: absolute;
       top: 15%;
@@ -431,8 +522,15 @@ footer {
 }
 
 @media (min-width: 1900px) {
-  .marginaaliboksi{
+  .marginaaliboksi {
     display: inline;
   }
 
+}
+
+@media (min-width: 3000px) {
+  .marginaaliboksi {
+    left: 60%;
+    width: 2000px;
+  }
 }

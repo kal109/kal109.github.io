@@ -28,42 +28,44 @@
   </header>
 
   <div class="mobilemenu">
-    <img src="../images/menubutton.png" alt="Menu-ikoni">
+    <span onclick="openNav()">
+        <img src="../images/menubutton.png" alt="Menu-ikoni">
+    </span>
   </div>
 
   <div class="contentgrid">
 
-    <a href="#infolla">
+    <a href="infolla.html">
       <img src="../images/infolla.jpg" alt="Athenen logo oranssilla pohjalla">
       <h3>Blogi: Miksi infolla?</h3>
       <p>Mikä minusta tulee isona? Kysymys on ollut vaikea...</p>
     </a>
 
-    <a href="#aikajana">
+    <a href="aikajana.html">
       <img src="../images/aikajana.jpg" alt="Muistilappuja korkkitaululla">
       <h3>Elämäni aikajana</h3>
       <p>Mitä olen oppinut menneistä töistä ja harrastuksista?</p>
     </a>
 
-    <a href="#2023">
+    <a href="2023.html">
       <img src="../images/2023.jpg" alt="2023">
       <h3>2023 kooste</h3>
       <p>Vuoden 2023 projektit ja saavutukset aikajärjestyksessä.</p>
     </a>
   
-    <a href="#openmw">
+    <a href="openmw.html">
       <img src="../images/openmw.jpg" alt="Ikoni, joka kuvastaa tiedostoa">
       <h3>Projekti - OpenMW UI</h3>
       <p>Käyttäjärajapinnan muokkausta. OpenMW:n tukema moderni UI...</p>
     </a>
 
-    <a href="#captcha">
+    <a href="captcha.html">
       <img src="../images/robotti.jpg" alt="Robotti vihreällä taustalla">
       <h3>Olenko robotti? -peli</h3>
       <p>CAPTCHA hämmentää itse kutakin. Pelaa interaktiivista peliä...</p>
     </a>
 
-    <a href="#turtleos">
+    <a href="turtleos.html">
       <img src="../images/turtleos.jpg" alt="Uiva kilpikonna">
       <h3>Projekti - turtleOS</h3>
       <p>Käyttäjärajapinnan suunnittelu tähän moderniin ja nopeaan...</p>
@@ -124,8 +126,53 @@
     </a>
   </div>
 
+  <div id="mobilenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="#projektit">
+
+      <img src="../images/projektit.png" alt="projektit" width=45%>
+      <figcaption>Projektit</figcaption>
+
+    </a>
+    <a href="#minusta">
+
+      <img src="../images/minusta.png" alt="minusta" width=45%>
+      <figcaption>Minusta</figcaption>
+
+    </a>
+    <a href="#faq">
+
+      <img src="../images/faq.png" alt="faq" width=45%>
+      <figcaption>FAQ</figcaption>
+
+    </a>
+    <a href="#suosittelijat">
+
+      <img src="../images/suosittelijat.png" alt="suosittelijat" width=45%>
+      <figcaption>Suosittelijat</figcaption>
+
+    </a>
+    <a href="#yhteystiedot">
+
+      <img src="../images/yhteystiedot.png" alt="yhteystiedot" width=45%>
+      <figcaption>Yhteystiedot</figcaption>
+
+    </a>
+  </div>
+
   <div class="marginaaliboksi">
   </div>
+
+  <script>
+    function openNav() {
+      document.getElementById('mobilenav').style.display = "inline";
+    }
+    
+    function closeNav() {
+      document.getElementById('mobilenav').style.display = "none";
+    }
+  </script>
 
 </body>
 
