@@ -8,7 +8,7 @@ Karlotta Lund
 101666686
 
 ## Linkki netissä pyörivään sivustoon
-
+https://kal109.github.io/
 
 ## Mitkä asiat teit?
 Kaksi sivua: index ja sivu, jolla pääsee katselemaan 2023-artikkelia, kun klikkaa thumbnailista. Pistin aika paljon huomiota etenkin responsiivisuuteen, ja tein animaatioita, jotka sopivat sivun teemaan.
@@ -26,4 +26,3 @@ Myös footerin taitto on hieman erilainen, kuin alkuperäisessä suunnitelmassa.
 ## Paljonko käytit tunteja kierrokseen?
 Varmaan 18.
 
-Arvio tunnin tarkkuudella riittää.
