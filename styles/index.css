@@ -37,11 +37,10 @@ body {
 header {
   width: 80%;
   justify-content: space-around;
+}
 
-  h1 {
-    text-align: end;
-    padding-top: 2rem;
-  }
+header h1 {
+  text-align: right;
 }
 
 .contentgrid {
@@ -50,64 +49,62 @@ header {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: center;
-  
-  article {
-    margin: 0 auto;
-    padding: 0 auto;
-    width: 30%;
-
-    a {
-      text-align: center;
-      display: table;
-      margin: 2rem auto;
-      width: 100%;
-      text-align: left;
-      transition: transform .25s;
-    }
-  
-    a:hover {
-      transform: scale(1.1);
-    }
-  }
- 
-  img {
-    display: table;
-    max-width: 100%;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: #A5AEBA;
-    border-radius: 7%;
-    box-shadow: 0px 3px 5px #999;
-    margin: 0 auto;
-
-  }
-
-  h3 {
-    display: table-caption;
-    caption-side: bottom;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    font-size: 1.25rem;
-    text-emphasis: none;
-    text-decoration: none;
-    color: #414E5B;
-  }
-
-  p {
-    display: table-caption;
-    caption-side: bottom;
-    margin: 0 auto;
-    text-align: left;
-    font-family: "MapleMono";
-    font-size: 0.75rem;
-    text-emphasis: none;
-    text-decoration: none;
-    color: #414E5B;
-    margin-bottom: 2rem;
-  }
-
 }
+
+.contentgrid article {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.contentgrid article a {
+  text-align: center;
+  display: table;
+  margin: 2rem auto;
+  width: 100%;
+  text-align: left;
+  transition: transform .25s;
+}
+
+.contentgrid article a:hover {
+  transform: scale(1.1);
+}
+
+.contentgrid img {
+  display: table;
+  max-width: 100%;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #A5AEBA;
+  border-radius: 7%;
+  box-shadow: 0px 3px 5px #999;
+  margin: 0 auto;
+}
+
+.contentgrid h3 {
+  display: table-caption;
+  caption-side: bottom;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1.25rem;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #414E5B;
+}
+
+.contentgrid p {
+  display: table-caption;
+  caption-side: bottom;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "MapleMono";
+  font-size: 0.75rem;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #414E5B;
+  margin-bottom: 2rem;
+}
+
 
 section {
   position: relative;
@@ -115,30 +112,31 @@ section {
   flex-direction: column;
   width: 70%;
   left: 5%;
-
-  img {
-    display: flex;
-    align-self: center;
-    margin: 3rem auto;
-    outline-style: solid;
-    outline-width: 6px;
-    outline-color: #A5AEBA;
-    border-radius: 7%;
-    box-shadow: 0px 3px 8px #999;
-  }
-
-  p {
-    line-height: 160%;
-    color: #414E5B;
-    font-family: 'Karla';
-    font-weight: 700;
-  }
-
-  h2 {
-    font-size: xx-large;
-    text-align: center;
-  }
 }
+
+section img {
+  display: flex;
+  align-self: center;
+  margin: 3rem auto;
+  outline-style: solid;
+  outline-width: 6px;
+  outline-color: #A5AEBA;
+  border-radius: 7%;
+  box-shadow: 0px 3px 8px #999;
+}
+
+section p {
+  line-height: 160%;
+  color: #414E5B;
+  font-family: 'Karla';
+  font-weight: 700;
+}
+
+section h2 {
+  font-size: xx-large;
+  text-align: center;
+}
+
 
 .sidenav {
   height: 100%;
@@ -169,13 +167,12 @@ section {
   font-size: 1.5vw;
   color: #414E5B;
   text-align: center;
+}
 
-  img {
-    max-width: 30%;
-    border-radius: 22%;
-    box-shadow: 0px 3px 5px #666;
-  }
-
+.sidenav a img {
+  max-width: 30%;
+  border-radius: 22%;
+  box-shadow: 0px 3px 5px #666;
 }
 
 .sidenav a:hover {
@@ -191,12 +188,12 @@ section {
   bottom: 8%;
   z-index: 40;
   display: none;
+}
 
-  img {
-    width: 5rem;
-    border-radius: 50%;
-    box-shadow: 3px 3px 5px #b9b9b9;
-  }
+.mobilemenu img {
+  width: 5rem;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #b9b9b9;
 }
 
 .mobilemenu:active {
@@ -247,23 +244,23 @@ section {
   text-decoration: none;
   justify-content: space-around;
   align-content: space-around;
-
-  figcaption {
-    padding: 1rem auto;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #414E5B;
-  }
-
-  img {
-    position: relative;
-    left: 35%;
-    width: 30%;
-    border-radius: 22%;
-    box-shadow: 0px 3px 5px #666;
-  }
-
 }
+
+#mobilenav a figcaption {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #414E5B;
+}
+
+#mobilenav img {
+  position: relative;
+  left: 35%;
+  width: 30%;
+  border-radius: 22%;
+  box-shadow: 0px 3px 5px #666;
+}
+
 
 #mobilenav .closebtn {
   position: fixed;
@@ -330,55 +327,57 @@ footer {
   margin-top: 8rem;
   margin-left: 0;
   margin-right: 0;
+}
+
+footer img {
+  position: absolute;
+  right: 11%;
+  top: 10%;
+  z-index: 21;
+  border-radius: 50%;
+}
 
 
-  img {
-    position: absolute;
-    right: 11%;
-    top: 10%;
-    z-index: 21;
-    border-radius: 50%;
-  }
-
-  .yhteystiedotFooter {
-    font-size: 1rem;
-    padding: 0.5rem auto;
-    position: absolute;
-    top: 0.5rem;
-    left: 3rem;
-    align-self: flex-start;
-  }
-
-  .viesti {
-    right: 21%;
-    top: 60%;
-    position: absolute;
-    z-index: 30;
-  }
-
-  .alas {
-    z-index: 20;
-    position: absolute;
-    bottom: 0.5rem;
-
-    p {
-      font-size: 0.7rem;
-      padding: 0 auto;
-      margin: 0 auto;
-    }
-
-    flex-wrap: nowrap;
-    padding: 0 auto;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-  }
+footer #yhteystiedotFooter {
+  font-size: 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 3rem;
+  align-self: flex-start;
 
 }
 
-.marginaaliboksi {
+footer .viesti {
+  right: 21%;
+  top: 60%;
+  position: absolute;
+  z-index: 30;
+}
+
+
+footer #alas {
+  z-index: 20;
+  position: absolute;
+  bottom: 0.5rem;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+
+footer #alas p {
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+
+#marginaaliboksi {
   height: 100%;
   display: none;
   position: fixed;
@@ -393,6 +392,7 @@ footer {
 
 
 @media (max-width: 750px) {
+
   body {
     margin-right: 5%;
     margin-left: 5%;
@@ -405,34 +405,30 @@ footer {
     flex-direction: column;
     width: 90%;
     right: 10%;
-  
-    img {
-      display: flex;
-      width: 100%;
-      align-self: center;
-      margin: 1.5rem auto;
-      outline-style: solid;
-      outline-width: 6px;
-      outline-color: #A5AEBA;
-      border-radius: 7%;
-      box-shadow: 0px 3px 8px #999;
-    }
-  
-    p {
-      line-height: 160%;
-      color: #414E5B;
-      font-family: 'Karla';
-      font-weight: 700;
-    }
-  
-    h2 {
-      font-size: x-large;
-      text-align: center;
-    }
   }
-  
-  .button {
-    scale: 0.75;
+
+  section img {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    margin: 1.5rem auto;
+    outline-style: solid;
+    outline-width: 6px;
+    outline-color: #A5AEBA;
+    border-radius: 7%;
+    box-shadow: 0px 3px 8px #999;
+  }
+
+  section p {
+    line-height: 160%;
+    color: #414E5B;
+    font-family: 'Karla';
+    font-weight: 700;
+  }
+
+  section h2 {
+    font-size: x-large;
+    text-align: center;
   }
 
   .sidenav {
@@ -443,59 +439,60 @@ footer {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-
-    article {
-      width: 45%;
-      a {
-        text-align: center;
-        display: table;
-        margin: 0.5rem auto;
-        width: 100%;
-        text-align: left;
-        flex-wrap: wrap;
-        transition: transform .25s;
-      }
-    }
-
-
-    img {
-      display: table;
-      max-width: 100%;
-      outline-style: solid;
-      outline-width: 3px;
-      outline-color: #A5AEBA;
-      border-radius: 7%;
-      box-shadow: 0px 3px 5px #999;
-      margin: 0 auto;
-
-    }
-
-    h3 {
-      display: table-caption;
-      caption-side: bottom;
-      margin: 0 auto;
-      margin-top: 0.25rem;
-      margin-bottom: 0.5rem;
-      text-align: left;
-      font-size: 0.85rem;
-      text-emphasis: none;
-      text-decoration: none;
-      color: #414E5B;
-    }
-
-    p {
-      display: table-caption;
-      caption-side: bottom;
-      margin: 0 auto;
-      text-align: left;
-      font-family: "MapleMono";
-      font-size: 0.6rem;
-      text-emphasis: none;
-      text-decoration: none;
-      color: #414E5B;
-      margin-bottom: 0.5rem;
-    }
   }
+
+  .contentgrid article {
+    width: 45%;
+  }
+
+  .contentgrid article a {
+    text-align: center;
+    display: table;
+    margin: 0.5rem auto;
+    width: 100%;
+    text-align: left;
+    flex-wrap: wrap;
+    transition: transform .25s;
+  }
+
+  .contentgrid article a img {
+    display: table;
+    max-width: 100%;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #A5AEBA;
+    border-radius: 7%;
+    box-shadow: 0px 3px 5px #999;
+    margin: 0 auto;
+
+  }
+
+  .contentgrid article a h3 {
+    display: table-caption;
+    caption-side: bottom;
+    margin: 0 auto;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 0.85rem;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #414E5B;
+  }
+
+  .contentgrid article a p {
+    display: table-caption;
+    caption-side: bottom;
+    margin: 0 auto;
+    text-align: left;
+    font-family: "MapleMono";
+    font-size: 0.6rem;
+    text-emphasis: none;
+    text-decoration: none;
+    color: #414E5B;
+    margin-bottom: 0.5rem;
+  }
+
 
   .mobilemenu {
     display: inline;
@@ -503,29 +500,28 @@ footer {
 
   footer {
     width: 100%;
-    min-height: none;
     text-align: left;
+  }
 
-    p {
-      font-size: 0.8rem;
-    }
+  footer p {
+    font-size: 0.8rem;
+  }
 
-    .yhteystiedotFooter {
-      position: absolute;
-      left: 10%;
-      top: 30%;
-    }
+  footer #yhteystiedotFooter {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+  }
 
-    .button {
-      width: 70% position: absolute;
-      top: 5%;
-      left: 15%;
-      scale: 0.9;
-    }
+  footer .button {
+    width: 70%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+  }
 
-    img {
-      display: none;
-    }
+  footer img {
+    display: none;
   }
 }
 
@@ -542,7 +538,6 @@ footer {
 
   .mobilemenu {
     right: 7%;
-    scale: 150%;
     display: inline;
   }
 
@@ -550,16 +545,13 @@ footer {
     width: 20%;
   }
 
-  footer {
+  footer p {
+    font-size: 0.8rem;
+  }
 
-    p {
-      font-size: 0.8rem;
-    }
-
-    .yhteystiedotFooter {
-      position: absolute;
-      top: 15%;
-    }
+  footer #yhteystiedotFooter {
+    position: absolute;
+    top: 15%;
   }
 }
 
