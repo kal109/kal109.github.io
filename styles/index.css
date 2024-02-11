@@ -138,7 +138,7 @@ section h2 {
 }
 
 
-.sidenav {
+#sidenav {
   height: 100%;
   max-width: 19%;
   max-height: 100%;
@@ -161,7 +161,7 @@ section h2 {
   align-content: space-around;
 }
 
-.sidenav a {
+#sidenav a {
   padding: 0 15px 2rem 15px;
   text-decoration: none;
   font-size: 1.5vw;
@@ -169,17 +169,17 @@ section h2 {
   text-align: center;
 }
 
-.sidenav a p {
+#sidenav a p {
   margin: 0 auto;
 }
 
-.sidenav a img {
+#sidenav a img {
   max-width: 30%;
   border-radius: 22%;
   box-shadow: 0px 3px 5px #666;
 }
 
-.sidenav a:hover {
+#sidenav a:hover {
   color: #798999;
   animation-name: clickMe;
   animation-duration: 1s;
@@ -433,7 +433,7 @@ footer #alas p {
     text-align: center;
   }
 
-  .sidenav {
+  #sidenav {
     display: none;
   }
 
@@ -534,7 +534,7 @@ footer #alas p {
     width: 90%;
   }
 
-  .sidenav {
+  #sidenav {
     display: none;
   }
 
