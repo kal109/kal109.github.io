@@ -169,6 +169,10 @@ section h2 {
   text-align: center;
 }
 
+.sidenav a p {
+  margin: 0 auto;
+}
+
 .sidenav a img {
   max-width: 30%;
   border-radius: 22%;
@@ -219,7 +223,7 @@ section h2 {
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
-  width: 65%;
+  width: 50%;
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 45px;
@@ -246,9 +250,7 @@ section h2 {
   align-content: space-around;
 }
 
-#mobilenav a figcaption {
-  padding: 1rem;
-  margin-bottom: 1rem;
+#mobilenav a p {
   font-size: 1rem;
   color: #414E5B;
 }
