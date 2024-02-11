@@ -50,20 +50,26 @@ header {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-content: center;
-
-  a {
-    text-align: center;
-    display: table;
-    margin: 2rem auto;
+  
+  article {
+    margin: 0 auto;
+    padding: 0 auto;
     width: 30%;
-    text-align: left;
-    transition: transform .25s;
-  }
 
-  a:hover {
-    transform: scale(1.1);
+    a {
+      text-align: center;
+      display: table;
+      margin: 2rem auto;
+      width: 100%;
+      text-align: left;
+      transition: transform .25s;
+    }
+  
+    a:hover {
+      transform: scale(1.1);
+    }
   }
-
+ 
   img {
     display: table;
     max-width: 100%;
@@ -393,6 +399,38 @@ footer {
     width: 90%;
   }
 
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    right: 10%;
+  
+    img {
+      display: flex;
+      width: 100%;
+      align-self: center;
+      margin: 1.5rem auto;
+      outline-style: solid;
+      outline-width: 6px;
+      outline-color: #A5AEBA;
+      border-radius: 7%;
+      box-shadow: 0px 3px 8px #999;
+    }
+  
+    p {
+      line-height: 160%;
+      color: #414E5B;
+      font-family: 'Karla';
+      font-weight: 700;
+    }
+  
+    h2 {
+      font-size: x-large;
+      text-align: center;
+    }
+  }
+  
   .button {
     scale: 0.75;
   }
@@ -406,15 +444,19 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    a {
-      text-align: center;
-      display: table;
-      margin: 0.5rem auto;
+    article {
       width: 45%;
-      text-align: left;
-      flex-wrap: wrap;
-      transition: transform .25s;
+      a {
+        text-align: center;
+        display: table;
+        margin: 0.5rem auto;
+        width: 100%;
+        text-align: left;
+        flex-wrap: wrap;
+        transition: transform .25s;
+      }
     }
+
 
     img {
       display: table;
