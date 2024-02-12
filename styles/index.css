@@ -527,7 +527,7 @@ footer #alas p {
   }
 }
 
-@media (min-width: 760px) and (max-width: 800px) {
+@media (min-width: 751px) and (max-width: 800px) {
   body {
     margin-right: 5%;
     margin-left: 5%;

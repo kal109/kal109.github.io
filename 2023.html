@@ -28,7 +28,9 @@
   </header>
 
   <div class="mobilemenu">
-    <img src="../images/menubutton.png" alt="Menu-ikoni">
+    <span onclick="openNav()">
+      <img src="../images/menubutton.png" alt="Menu-ikoni">
+    </span>
   </div>
 
   <section>
@@ -50,7 +52,7 @@
 
   <footer>
     <a href="#viesti" class="button viesti">Laita viesti!</a>
-    <div class="yhteystiedotFooter">
+    <div id="yhteystiedotFooter">
       <p>Karla L.<br>
         karla.l@feikkiosoite.com<br>
         112<br> </p>
@@ -58,50 +60,96 @@
         X: @karla_eioox<br>
         Linkedin: linkedin.com/in/karlaL</p>
     </div>
-    <img src="../images/minä.jpg" alt="Kuva Karlasta" width=150rem height=150rem>
-    <div class="alas">
+    <img src="../images/minä.jpg" alt="Kuva Karlasta" width="150" height="150">
+    <div id="alas">
       <p> Privacy Policy </p>
       <p>Terms of Service</p>
       <p>©Karla L. 2024</p>
     </div>
   </footer>
 
-
-  <div class="sidenav">
+  <div id="sidenav">
     <a href="#projektit">
 
-      <img src="../images/projektit.png" alt="projektit" width=45%>
-      <figcaption>Projektit</figcaption>
+      <img src="../images/projektit.png" alt="projektit">
+      <p>Projektit</p>
 
     </a>
     <a href="#minusta">
 
-      <img src="../images/minusta.png" alt="minusta" width=45%>
-      <figcaption>Minusta</figcaption>
+      <img src="../images/minusta.png" alt="minusta">
+      <p>Minusta</p>
 
     </a>
     <a href="#faq">
 
-      <img src="../images/faq.png" alt="faq" width=45%>
-      <figcaption>FAQ</figcaption>
+      <img src="../images/faq.png" alt="faq">
+      <p>FAQ</p>
 
     </a>
     <a href="#suosittelijat">
 
-      <img src="../images/suosittelijat.png" alt="suosittelijat" width=45%>
-      <figcaption>Suosittelijat</figcaption>
+      <img src="../images/suosittelijat.png" alt="suosittelijat">
+      <p>Suosittelijat</p>
 
     </a>
     <a href="#yhteystiedot">
 
-      <img src="../images/yhteystiedot.png" alt="yhteystiedot" width=45%>
-      <figcaption>Yhteystiedot</figcaption>
+      <img src="../images/yhteystiedot.png" alt="yhteystiedot">
+      <p>Yhteystiedot</p>
+
+    </a>
+  </div>
+
+  <div id="mobilenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="#projektit">
+
+      <img src="../images/projektit.png" alt="projektit">
+      <p>Projektit</p>
+
+    </a>
+    <a href="#minusta">
+
+      <img src="../images/minusta.png" alt="minusta">
+      <p>Minusta</p>
+
+    </a>
+    <a href="#faq">
+
+      <img src="../images/faq.png" alt="faq">
+      <p>FAQ</p>
+
+    </a>
+    <a href="#suosittelijat">
+
+      <img src="../images/suosittelijat.png" alt="suosittelijat">
+      <p>Suosittelijat</p>
+
+    </a>
+    <a href="#yhteystiedot">
+
+      <img src="../images/yhteystiedot.png" alt="yhteystiedot">
+      <p>Yhteystiedot</p>
 
     </a>
   </div>
 
   <div class="marginaaliboksi">
+  
   </div>
+
+  
+  <script>
+    function openNav() {
+      document.getElementById('mobilenav').style.display = "inline";
+    }
+
+    function closeNav() {
+      document.getElementById('mobilenav').style.display = "none";
+    }
+  </script>
 
 </body>
 
