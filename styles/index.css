@@ -115,6 +115,7 @@ section {
 }
 
 section img {
+  width: 60%;
   display: flex;
   align-self: center;
   margin: 3rem auto;
