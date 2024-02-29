@@ -105,6 +105,9 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+.hideContent {
+  display: none !important ;
+}
 
 section {
   position: relative;
@@ -500,7 +503,6 @@ footer #alas p {
     color: #414E5B;
     margin-bottom: 0.5rem;
   }
-
 
   #mobilemenu {
     display: inline;

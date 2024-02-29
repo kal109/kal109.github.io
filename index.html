@@ -32,24 +32,9 @@
   </div>
 
   <div class="contentgrid">
-    <article>
-      <a href="infolla.html">
-        <img src="../images/infolla.jpg" alt="Athenen logo oranssilla pohjalla">
-        <h3>Blogi: Miksi infolla?</h3>
-        <p>Mikä minusta tulee isona? Kysymys on ollut vaikea...</p>
-      </a>
-    </article>
 
     <article>
-      <a href="aikajana.html">
-        <img src="../images/aikajana.jpg" alt="Muistilappuja korkkitaululla">
-        <h3>Elämäni aikajana</h3>
-        <p>Mitä olen oppinut menneistä töistä ja harrastuksista?</p>
-      </a>
-    </article>
-
-    <article>
-      <a href="2023.html">
+      <a href="2023.html" class="projektiPostaus">
         <img src="../images/2023.jpg" alt="2023">
         <h3>2023 kooste</h3>
         <p>Vuoden 2023 projektit ja saavutukset aikajärjestyksessä.</p>
@@ -57,7 +42,7 @@
     </article>
 
     <article>
-      <a href="openmw.html">
+      <a href="openmw.html" class="projektiPostaus">
         <img src="../images/openmw.jpg" alt="Ikoni, joka kuvastaa tiedostoa">
         <h3>Projekti - OpenMW UI</h3>
         <p>Käyttäjärajapinnan muokkausta. OpenMW:n tukema moderni UI...</p>
@@ -65,7 +50,7 @@
     </article>
 
     <article>
-      <a href="captcha.html">
+      <a href="captcha.html" class="projektiPostaus">
         <img src="../images/robotti.jpg" alt="Robotti vihreällä taustalla">
         <h3>Olenko robotti? -peli</h3>
         <p>CAPTCHA hämmentää itse kutakin. Pelaa interaktiivista peliä...</p>
@@ -73,10 +58,26 @@
     </article>
 
     <article>
-      <a href="turtleos.html">
+      <a href="turtleos.html" class="projektiPostaus">
         <img src="../images/turtleos.jpg" alt="Uiva kilpikonna">
         <h3>Projekti - turtleOS</h3>
         <p>Käyttäjärajapinnan suunnittelu tähän moderniin ja nopeaan...</p>
+      </a>
+    </article>
+
+    <article>
+      <a href="infolla.html" class="blogiPostaus">
+        <img src="../images/infolla.jpg" alt="Athenen logo oranssilla pohjalla">
+        <h3>Blogi: Miksi infolla?</h3>
+        <p>Mikä minusta tulee isona? Kysymys on ollut vaikea...</p>
+      </a>
+    </article>
+
+    <article>
+      <a href="aikajana.html" class="blogiPostaus">
+        <img src="../images/aikajana.jpg" alt="Muistilappuja korkkitaululla">
+        <h3>Elämäni aikajana</h3>
+        <p>Mitä olen oppinut menneistä töistä ja harrastuksista?</p>
       </a>
     </article>
 
@@ -103,12 +104,11 @@
 
 
   <div id="sidenav">
-    <a href="#projektit">
-
+    <a class="projektitFilter" id="projektitFilter">
       <img src="../images/projektit.png" alt="projektit">
-      <p>Projektit</p>
-
+      <p id="projektitTeksti">Projektit</p>
     </a>
+
     <a href="#minusta">
 
       <img src="../images/minusta.png" alt="minusta">
@@ -138,10 +138,10 @@
   <div class="mobilenav" id="mobilenav">
     <a id="closebtn">x</a>
 
-    <a href="#projektit">
+    <a class="projektitFilter" id="projektitFilterMobiili">
 
       <img src="../images/projektit.png" alt="projektit">
-      <p>Projektit</p>
+      <p id="projektitTekstiMobiili">Projektit</p>
 
     </a>
     <a href="#minusta">
