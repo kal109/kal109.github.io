@@ -187,7 +187,7 @@ section h2 {
   animation-iteration-count: infinite;
 }
 
-.mobilemenu {
+#mobilemenu {
   position: fixed;
   right: 10%;
   bottom: 8%;
@@ -195,13 +195,13 @@ section h2 {
   display: none;
 }
 
-.mobilemenu img {
+#mobilemenu img {
   width: 5rem;
   border-radius: 50%;
   box-shadow: 3px 3px 5px #b9b9b9;
 }
 
-.mobilemenu:active {
+#mobilemenu:active {
   transform: scale(1.2);
 }
 
@@ -219,8 +219,9 @@ section h2 {
   }
 }
 
-#mobilenav {
-  display: flex;
+
+.mobilenav {
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
@@ -240,23 +241,28 @@ section h2 {
   background-size: cover;
   overflow-x: hidden;
   padding-top: 20px;
-  transition: 0.5s;
-  display: none;
+  transform: translateX(150%);
+  transition: 0.8s;
 }
 
-#mobilenav a {
+.openNav {
+  transform: translateX(0%);
+}
+
+
+.mobilenav a {
   text-align: center;
   text-decoration: none;
   justify-content: space-around;
   align-content: space-around;
 }
 
-#mobilenav a p {
+.mobilenav a p {
   font-size: 1rem;
   color: #414E5B;
 }
 
-#mobilenav img {
+.mobilenav img {
   position: relative;
   left: 35%;
   width: 30%;
@@ -264,8 +270,7 @@ section h2 {
   box-shadow: 0px 3px 5px #666;
 }
 
-
-#mobilenav .closebtn {
+.mobilenav #closebtn {
   position: fixed;
   z-index: 60;
   top: 0;
@@ -497,7 +502,11 @@ footer #alas p {
   }
 
 
-  .mobilemenu {
+  #mobilemenu {
+    display: inline;
+  }
+
+  .mobilenav {
     display: inline;
   }
 
@@ -539,12 +548,13 @@ footer #alas p {
     display: none;
   }
 
-  .mobilemenu {
+  #mobilemenu {
     right: 7%;
     display: inline;
   }
 
-  #mobilenav {
+  .mobilenav {
+    display: inline;
     width: 20%;
   }
 

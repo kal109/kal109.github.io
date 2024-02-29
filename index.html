@@ -27,10 +27,8 @@
     <h1>Karla L.</h1>
   </header>
 
-  <div class="mobilemenu">
-    <span onclick="openNav()">
-      <img src="../images/menubutton.png" alt="Menu-ikoni">
-    </span>
+  <div id="mobilemenu">
+    <img src="../images/menubutton.png" alt="Menu-ikoni">
   </div>
 
   <div class="contentgrid">
@@ -137,8 +135,8 @@
     </a>
   </div>
 
-  <div id="mobilenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="mobilenav" id="mobilenav">
+    <a id="closebtn">x</a>
 
     <a href="#projektit">
 
@@ -174,17 +172,7 @@
 
   <div id="marginaaliboksi">
   </div>
-
-  <script>
-    function openNav() {
-      document.getElementById('mobilenav').style.display = "inline";
-    }
-
-    function closeNav() {
-      document.getElementById('mobilenav').style.display = "none";
-    }
-  </script>
-
+  <script type="text/javascript" src="../scripts/index.js"></script>
 </body>
 
 </html>
