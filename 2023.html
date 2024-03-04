@@ -27,10 +27,8 @@
     <h1>Karla L.</h1>
   </header>
 
-  <div class="mobilemenu">
-    <span onclick="openNav()">
-      <img src="../images/menubutton.png" alt="Menu-ikoni">
-    </span>
+  <div id="mobilemenu">
+    <img src="../images/menubutton.png" alt="Menu-ikoni">
   </div>
 
   <section>
@@ -69,25 +67,24 @@
   </footer>
 
   <div id="sidenav">
-    <a href="#projektit">
-
+    <a class="projektitFilter" id="projektitFilter">
       <img src="../images/projektit.png" alt="projektit">
-      <p>Projektit</p>
-
+      <p id="projektitTeksti">Projektit</p>
     </a>
-    <a href="#minusta">
+
+    <a class="minustaFilter" id="minustaFilter">
 
       <img src="../images/minusta.png" alt="minusta">
-      <p>Minusta</p>
+      <p id="minustaTeksti">Minusta</p>
 
     </a>
     <a href="#faq">
 
-      <img src="../images/faq.png" alt="faq">
+      <img src="../images/faq.png" alt="FAQ">
       <p>FAQ</p>
 
     </a>
-    <a href="#suosittelijat">
+    <a class="suosittelijatBtn" id="suosittelijatBtn">
 
       <img src="../images/suosittelijat.png" alt="suosittelijat">
       <p>Suosittelijat</p>
@@ -101,28 +98,28 @@
     </a>
   </div>
 
-  <div id="mobilenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="mobilenav" id="mobilenav">
+    <a id="closebtn">x</a>
 
-    <a href="#projektit">
+    <a class="projektitFilter" id="projektitFilterMobiili">
 
       <img src="../images/projektit.png" alt="projektit">
-      <p>Projektit</p>
+      <p id="projektitTekstiMobiili">Projektit</p>
 
     </a>
-    <a href="#minusta">
+    <a class="minustaFilter" id="minustaFilterMobiili">
 
       <img src="../images/minusta.png" alt="minusta">
-      <p>Minusta</p>
+      <p id="minustaTekstiMobiili">Minusta</p>
 
     </a>
     <a href="#faq">
 
-      <img src="../images/faq.png" alt="faq">
+      <img src="../images/faq.png" alt="FAQ">
       <p>FAQ</p>
 
     </a>
-    <a href="#suosittelijat">
+    <a class="suosittelijatBtn" id="suosittelijatBtnMobiili">
 
       <img src="../images/suosittelijat.png" alt="suosittelijat">
       <p>Suosittelijat</p>
@@ -140,16 +137,7 @@
   
   </div>
 
-  
-  <script>
-    function openNav() {
-      document.getElementById('mobilenav').style.display = "inline";
-    }
-
-    function closeNav() {
-      document.getElementById('mobilenav').style.display = "none";
-    }
-  </script>
+  <script type="text/javascript" src="../scripts/index.js"></script>
 
 </body>
 

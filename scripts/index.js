@@ -68,6 +68,8 @@ mobiiliFilter.addEventListener("click", filterBlogsOut);
 minustaFilter.addEventListener("click", filterProjectsOut);
 mobiiliMinustaFilter.addEventListener("click", filterProjectsOut);
 
+
+
 //Aukeava Suosittelijat-modaali, jonka saa auki sivupalkin "suosittelijat"-napilla
 
 const suosittelijatModaali = document.getElementById("modaali");
