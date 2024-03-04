@@ -1,28 +1,16 @@
-# Portfoliosivu
-Täytä omat tiedot tähän
+# Alla oleva liittyy JS part 2 -kierrokseen
 
-## Nimi
-Karlotta Lund
+## Mitä toiminnallisuuksia toteutit ja kuinka paljon keräsit pisteitä?
+6 pistettä - Mobiilinavigaatio. Mulla oli tästä jo alkeellinen implementaatio, jossa script oli suoraan html filessä, joten päätin vaan tehdä siitä paremman.
+7 pistettä - Aukeava modaali. Sopi mun visuaaliseen ilmeeseen. Tää aukeaa tolla sidebarin "suosittelijat" napilla.
+9 pistettä - Elementtien filtteröinti. Tää oli jo alkuperäisessä suunnitelmassa, joten oli kiva, et se oli vaihtoehto.
+Yhteensä 22 pistettä.
 
-## Opiskelijanumero
-101666686
+## Mikä oli helppoa?
+Ei mikään. Hakkasin päätä seinään koko kierroksen. En ollu kuunnellu tarpeeks luennoilla ni olin hukassa js kanssa.
 
-## Linkki netissä pyörivään sivustoon
-https://kal109.github.io/
+## Mikä oli haastavaa?
+Oppia javascriptiä. Setviä ton css läpi. Ei ole muokkaajaystävällistä koodia toi mun css.
 
-## Mitkä asiat teit?
-Kaksi sivua: index ja sivu, jolla pääsee katselemaan 2023-artikkelia, kun klikkaa thumbnailista. Pistin aika paljon huomiota etenkin responsiivisuuteen, ja tein animaatioita, jotka sopivat sivun teemaan.
-
-## Teitkö jotain puutteellisesti? Mitä jätit tekemättä?
-En tehnyt yhteystietoja tai hero-osiota, ja navbar ei johda minnekään.
-
-## Mikä tehtävässä oli haastavaa? Muuttuiko sivusto matkan varrella alkuperäisestä suunnitelmastasi?
-Haastavinta oli se, että suunnitellessa sivun visuaalista ilmettä en tiennyt mikä on helppo toteuttaa ja mikä ei - esim. taustalla olevien pilkkujen toteutus oli yllättävän vaikeaa. Olin myös tehnyt kaiken kuvankäsittelyn ikoneissa yms. suoraan figmassa, joten jouduin screenshottaamaan ne sieltä.
-
-Muutin mobiilinavigaation ulkoasua, sillä sen tekeminen oli yllättävän vaikeaa, ja ei vaan ollut tarpeeksi aikaa saada sitä näyttämään alkuperäiseltä designilta. Muutettu versio on siisti, toimii halutusti ja sopii sivun ilmeeseen, ja se riittää.
-
-Myös footerin taitto on hieman erilainen, kuin alkuperäisessä suunnitelmassa.
-
-## Paljonko käytit tunteja kierrokseen?
-Varmaan 18.
-
+## Mikä oli kivaa?
+Tykkäsin siitä, että sit ku hommat toimi ni oli aika clean. Kanssa, että se alkuperäinen konsepti rakentui vähän pidemmälle.
