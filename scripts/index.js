@@ -1,4 +1,4 @@
-//mobiilinavigaation avaaminen ja sulkeminen
+//Mobiilinavigaation avaaminen ja sulkeminen
 const navigation = document.getElementById('mobilenav')
 
 function openNav() {
@@ -53,7 +53,7 @@ function filterProjectsOut() {
         kierroksenProjekti.classList.toggle("hideContent");
     }
 
-    if (projektit[0].classList.contains("hideConten")) {
+    if (projektit[0].classList.contains("hideContent")) {
         minustaTeksti.innerHTML = "Kaikki sisältö";
         minustaTekstiMobiili.innerHTML = "Kaikki sisältö";
     }
@@ -67,3 +67,22 @@ projektitFilter.addEventListener("click", filterBlogsOut);
 mobiiliFilter.addEventListener("click", filterBlogsOut);
 minustaFilter.addEventListener("click", filterProjectsOut);
 mobiiliMinustaFilter.addEventListener("click", filterProjectsOut);
+
+//Aukeava Suosittelijat-modaali, jonka saa auki sivupalkin "suosittelijat"-napilla
+
+const suosittelijatModaali = document.getElementById("modaali");
+const suosittelijatNappi = document.getElementById("suosittelijatBtn");
+const suosittelijatNappiMob = document.getElementById("suosittelijatBtnMobiili");
+const hideBtn = document.getElementById("hideRecsBtn");
+
+function showRecommendations() {
+    suosittelijatModaali.classList.add("showModal");
+}
+
+function hideRecommendations() {
+    suosittelijatModaali.classList.remove("showModal");
+}
+
+suosittelijatNappi.addEventListener("click", showRecommendations);
+suosittelijatNappiMob.addEventListener("click", showRecommendations);
+hideBtn.addEventListener("click", hideRecommendations);

@@ -106,7 +106,7 @@ header h1 {
 }
 
 .hideContent {
-  display: none !important ;
+  display: none !important;
 }
 
 section {
@@ -188,6 +188,47 @@ section h2 {
   animation-name: clickMe;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+}
+
+#modaali {
+  display: none;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  background-image: linear-gradient(to top, rgba(146, 148, 145, 0.7), rgba(0, 0, 0, 0.6));
+  width: 100%;
+  height: 100%;
+}
+
+#modaali #suosittelijatModaali {
+  background-image: linear-gradient(to top, #dfe0df 0%, #ECEEEB 85%, #B5ECFE 100%);
+  outline: solid;
+  outline-color: #B7B7B7;
+  outline-width: 0.45rem;
+  border-radius: 2.3rem;
+  color: #414E5B;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  z-index: 100;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+}
+
+#modaali #suosittelijatModaali #hideRecsBtn {
+  cursor: pointer;
+  color: #657483;
+  margin-left: 80%;
+}
+
+.showModal {
+  display: block !important;
 }
 
 #mobilemenu {
