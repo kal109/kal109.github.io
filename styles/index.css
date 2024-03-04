@@ -442,7 +442,7 @@ footer #alas p {
   outline-color: #37C6F4;
 }
 
-
+/*mobiilille */
 @media (max-width: 750px) {
 
   body {
@@ -578,8 +578,19 @@ footer #alas p {
   footer img {
     display: none;
   }
+
+  #modaali #suosittelijatModaali {
+    padding: 4px 25px;
+    font-size: 6px;
+    margin: 4px 2px;
+    z-index: 100;
+    position: fixed;
+    right: 25%;
+  }
+  
 }
 
+/* tabletille */
 @media (min-width: 751px) and (max-width: 800px) {
   body {
     margin-right: 5%;
@@ -609,7 +620,28 @@ footer #alas p {
     position: absolute;
     top: 15%;
   }
+
+  
+#modaali #suosittelijatModaali {
+  background-image: linear-gradient(to top, #dfe0df 0%, #ECEEEB 85%, #B5ECFE 100%);
+  outline: solid;
+  outline-color: #B7B7B7;
+  outline-width: 0.45rem;
+  border-radius: 2.3rem;
+  color: #414E5B;
+  padding: 4px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 8px;
+  margin: 4px 2px;
+  z-index: 100;
+  position: fixed;
+  right: 20%;
 }
+
+}
+
+
 
 @media (min-width: 1900px) {
   .marginaaliboksi {
